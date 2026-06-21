@@ -16,13 +16,13 @@ warn() { printf '\033[1;33m!! \033[0m %s\n' "$*"; }
 # --- public marketplaces (auth-fritt) ---
 PUBLIC_MARKETPLACES=(
   "heintonny/skills"        # marketplace-navn: heintonny
-  "mattpocock/skills"       # marketplace-navn: mattpocock-skills
 )
 
 # --- plugins å installere: <plugin>@<marketplace> ---
+# 'skills' inneholder egne skills/agents/commands + et kuratert, vendret
+# utvalg fra mattpocock/skills (MIT — se licenses/).
 PLUGINS=(
   "skills@heintonny"
-  "mattpocock-skills@mattpocock-skills"
 )
 
 require_claude() {

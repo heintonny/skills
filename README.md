@@ -32,8 +32,21 @@ cd skills && ./bootstrap.sh
 plugins/skills/
 ├── agents/      # macos-dev-environment-manager
 ├── commands/    # /commit
-└── skills/      # (egne skills legges til her over tid)
+└── skills/      # egne skills + kuratert utvalg vendret fra mattpocock/skills
 ```
+
+Skills-mappen inneholder bl.a. engineering (`tdd`, `diagnosing-bugs`,
+`codebase-design`, `domain-modeling`, `implement`, `improve-codebase-architecture`,
+`resolving-merge-conflicts`, `prototype`, `review`), issue/plan-flyt (`to-issues`,
+`to-prd`, `triage`, `grill-with-docs`, `grill-me`, `grilling`, `decision-mapping`,
+`handoff`), skill-authoring (`writing-great-skills`) og diverse verktøy.
+
+## Lisens & attribusjon
+
+Egne skills/agents/commands er Heins egne. Et kuratert utvalg skills er vendret
+inn fra **[mattpocock/skills](https://github.com/mattpocock/skills)** (MIT) og kan
+være lokalt tilpasset. MIT-attribusjon ligger i [`licenses/`](./licenses/) — se
+[`NOTICE.md`](./licenses/NOTICE.md) for hvilke skills det gjelder.
 
 ## Hvordan dette henger sammen med resten av oppsettet
 
