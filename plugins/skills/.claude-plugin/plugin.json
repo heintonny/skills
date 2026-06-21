@@ -1,0 +1,9 @@
+{
+  "name": "skills",
+  "description": "Heins generiske Claude Code skills, agents og commands — portabelt på tvers av Mac, PC og VM.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Hein Tonny Køien"
+  },
+  "homepage": "https://github.com/heintonny/skills"
+}

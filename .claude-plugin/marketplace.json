@@ -1,0 +1,17 @@
+{
+  "name": "heintonny",
+  "owner": {
+    "name": "Hein Tonny Køien"
+  },
+  "metadata": {
+    "description": "Heins personlige Claude Code marketplace — egne skills, agents og commands. Installeres auth-fritt på Mac, PC og VM.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "skills",
+      "source": "./plugins/skills",
+      "description": "Heins generiske skills, agents og commands (commit, macOS dev-env). Install: claude plugin install skills@heintonny"
+    }
+  ]
+}
