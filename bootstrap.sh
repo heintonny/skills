@@ -1,33 +1,33 @@
 #!/usr/bin/env bash
-# bootstrap.sh — sett opp Heins Claude Code skills/agents/commands på en ny maskin.
-# Idempotent: trygt å kjøre flere ganger. Fungerer på macOS, Linux og VM-er.
+# bootstrap.sh — set up Hein's Claude Code skills/agents/commands on a new machine.
+# Idempotent: safe to run multiple times. Works on macOS, Linux and VMs.
 #
-# Bruk:
+# Usage:
 #   curl -fsSL https://raw.githubusercontent.com/heintonny/skills/main/bootstrap.sh | bash
-#   eller: git clone … && ./bootstrap.sh
+#   or: git clone … && ./bootstrap.sh
 #
-# Krever: claude (Claude Code CLI). Ingen GitHub-auth nødvendig for de public marketplacene.
+# Requires: claude (Claude Code CLI). No GitHub auth needed for the public marketplaces.
 
 set -euo pipefail
 
 say() { printf '\033[1;34m==>\033[0m %s\n' "$*"; }
 warn() { printf '\033[1;33m!! \033[0m %s\n' "$*"; }
 
-# --- public marketplaces (auth-fritt) ---
+# --- public marketplaces (auth-free) ---
 PUBLIC_MARKETPLACES=(
-  "heintonny/skills"        # marketplace-navn: heintonny
+  "heintonny/skills"        # marketplace name: heintonny
 )
 
-# --- plugins å installere: <plugin>@<marketplace> ---
-# 'skills' inneholder egne skills/agents/commands + et kuratert, vendret
-# utvalg fra mattpocock/skills (MIT — se licenses/).
+# --- plugins to install: <plugin>@<marketplace> ---
+# 'skills' contains own skills/agents/commands + a curated set vendored
+# from mattpocock/skills (MIT — see licenses/).
 PLUGINS=(
   "skills@heintonny"
 )
 
 require_claude() {
   if ! command -v claude >/dev/null 2>&1; then
-    warn "Fant ikke 'claude' (Claude Code CLI) i PATH. Installer den først:"
+    warn "Could not find 'claude' (Claude Code CLI) in PATH. Install it first:"
     warn "  https://docs.claude.com/en/docs/claude-code"
     exit 1
   fi
@@ -36,9 +36,9 @@ require_claude() {
 add_marketplace() {
   local repo="$1"
   if claude plugin marketplace list 2>/dev/null | grep -q "$repo"; then
-    say "Marketplace allerede lagt til: $repo"
+    say "Marketplace already added: $repo"
   else
-    say "Legger til marketplace: $repo"
+    say "Adding marketplace: $repo"
     claude plugin marketplace add "$repo"
   fi
 }
@@ -46,9 +46,9 @@ add_marketplace() {
 install_plugin() {
   local spec="$1"
   if claude plugin list 2>/dev/null | grep -q "${spec%@*}"; then
-    say "Plugin allerede installert: $spec"
+    say "Plugin already installed: $spec"
   else
-    say "Installerer plugin: $spec"
+    say "Installing plugin: $spec"
     claude plugin install "$spec"
   fi
 }
@@ -56,22 +56,22 @@ install_plugin() {
 main() {
   require_claude
 
-  say "Oppdaterer/legger til marketplaces…"
+  say "Updating/adding marketplaces…"
   for m in "${PUBLIC_MARKETPLACES[@]}"; do
     add_marketplace "$m"
   done
 
-  say "Installerer plugins…"
+  say "Installing plugins…"
   for p in "${PLUGINS[@]}"; do
     install_plugin "$p"
   done
 
-  say "Ferdig. Verifiser med:  claude plugin list"
+  say "Done. Verify with:  claude plugin list"
   cat <<'EOF'
 
-Valgfritt — privat innhold (krever GitHub-auth på maskinen):
+Optional — private content (requires GitHub auth on the machine):
   claude plugin marketplace add heintonny/agent-system-admin
-  # installer ev. private plugins derfra med:  claude plugin install <navn>@<marketplace>
+  # then install any private plugins from there with:  claude plugin install <name>@<marketplace>
 EOF
 }
 

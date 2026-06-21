@@ -1,15 +1,15 @@
 # Third-party attribution
 
-Dette repoet inneholder skills som er avledet fra og delvis kopiert fra:
+This repository contains skills derived from and partially copied from:
 
 ## mattpocock/skills
 
-- **Kilde:** https://github.com/mattpocock/skills
-- **Lisens:** MIT — Copyright (c) 2026 Matt Pocock
-- **Lisenstekst:** [`mattpocock-skills-LICENSE.txt`](./mattpocock-skills-LICENSE.txt)
+- **Source:** https://github.com/mattpocock/skills
+- **License:** MIT — Copyright (c) 2026 Matt Pocock
+- **License text:** [`mattpocock-skills-LICENSE.txt`](./mattpocock-skills-LICENSE.txt)
 
-Følgende skills under `plugins/skills/skills/` er vendret inn fra `mattpocock/skills`
-(noen kan være lokalt tilpasset/optimalisert for vårt bruk):
+The following skills under `plugins/skills/skills/` are vendored from
+`mattpocock/skills` (some may be locally adapted/optimized for our use):
 
 `caveman`, `codebase-design`, `decision-mapping`, `diagnosing-bugs`,
 `domain-modeling`, `edit-article`, `git-guardrails-claude-code`, `grill-me`,
@@ -20,9 +20,9 @@ Følgende skills under `plugins/skills/skills/` er vendret inn fra `mattpocock/s
 `to-prd`, `triage`, `write-a-skill`, `writing-beats`, `writing-fragments`,
 `writing-great-skills`, `writing-shape`, `zoom-out`.
 
-Merk: `caveman`, `write-a-skill` og `zoom-out` er fjernet/omdøpt i upstream og
-ble vendret fra en tidligere installert (MIT) versjon.
+Note: `caveman`, `write-a-skill` and `zoom-out` have been removed/renamed
+upstream and were vendored from a previously installed (MIT) version.
 
-MIT-lisensen krever at copyright- og tillatelses-noticen følger med ved
-videredistribusjon; den ligger i filen referert over. Egne skills, agents og
-commands i dette repoet er ikke dekket av denne noticen.
+The MIT license requires that the copyright and permission notice accompany any
+redistribution; it is in the file referenced above. Own skills, agents and
+commands in this repository are not covered by this notice.

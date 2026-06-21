@@ -1,77 +1,79 @@
 # heintonny/skills
 
-Hein Tonny Køiens personlige **Claude Code marketplace** — egne skills, agents og
-commands, pakket som en plugin slik at de kan installeres og enables identisk på
-tvers av Mac, PC og VM via det innebygde `claude plugin`-systemet.
+Hein Tonny Køien's personal **Claude Code marketplace** — own skills, agents and
+commands, packaged as a plugin so they can be installed and enabled identically
+across Mac, PC and VM via the built-in `claude plugin` system.
 
 | | |
 |---|---|
-| **Marketplace-navn** | `heintonny` |
-| **Plugin-navn** | `skills` |
+| **Marketplace name** | `heintonny` |
+| **Plugin name** | `skills` |
 | **Install** | `claude plugin install skills@heintonny` |
 
-## Hurtigstart på ny maskin
+## Quick start on a new machine
 
-Auth-fritt (dette repoet er public):
+Auth-free (this repo is public):
 
 ```bash
 claude plugin marketplace add heintonny/skills
 claude plugin install skills@heintonny
 ```
 
-Eller kjør bootstrap-scriptet som også setter opp eksterne skills:
+Or run the bootstrap script:
 
 ```bash
 git clone https://github.com/heintonny/skills.git
 cd skills && ./bootstrap.sh
 ```
 
-## Hva pluginen inneholder
+## What the plugin contains
 
 ```
 plugins/skills/
 ├── agents/      # macos-dev-environment-manager
 ├── commands/    # /commit
-└── skills/      # egne skills + kuratert utvalg vendret fra mattpocock/skills
+└── skills/      # own skills + a curated set vendored from mattpocock/skills
 ```
 
-Skills-mappen inneholder bl.a. engineering (`tdd`, `diagnosing-bugs`,
+The skills directory includes, among others, engineering (`tdd`, `diagnosing-bugs`,
 `codebase-design`, `domain-modeling`, `implement`, `improve-codebase-architecture`,
-`resolving-merge-conflicts`, `prototype`, `review`), issue/plan-flyt (`to-issues`,
-`to-prd`, `triage`, `grill-with-docs`, `grill-me`, `grilling`, `decision-mapping`,
-`handoff`), skill-authoring (`writing-great-skills`) og diverse verktøy.
+`resolving-merge-conflicts`, `prototype`, `review`), issue/planning workflow
+(`to-issues`, `to-prd`, `triage`, `grill-with-docs`, `grill-me`, `grilling`,
+`decision-mapping`, `handoff`), skill authoring (`writing-great-skills`,
+`write-a-skill`) and assorted tooling.
 
-## Lisens & attribusjon
+## License & attribution
 
-Egne skills/agents/commands er Heins egne. Et kuratert utvalg skills er vendret
-inn fra **[mattpocock/skills](https://github.com/mattpocock/skills)** (MIT) og kan
-være lokalt tilpasset. MIT-attribusjon ligger i [`licenses/`](./licenses/) — se
-[`NOTICE.md`](./licenses/NOTICE.md) for hvilke skills det gjelder.
+Own skills/agents/commands are Hein's own. A curated set of skills is vendored
+from **[mattpocock/skills](https://github.com/mattpocock/skills)** (MIT) and may
+be locally adapted. The MIT attribution lives in [`licenses/`](./licenses/) — see
+[`NOTICE.md`](./licenses/NOTICE.md) for which skills it covers.
 
-## Hvordan dette henger sammen med resten av oppsettet
+## How this fits the rest of the setup
 
-Oppsettet er delt i tre lag etter følsomhet:
+The setup is split into three layers by sensitivity:
 
-| Lag | Hjem | Synlighet |
+| Layer | Home | Visibility |
 |---|---|---|
-| Egne generiske skills/agents/commands | **dette repoet** (`heintonny/skills`) | public |
-| CLAUDE.md guardrails (felles + per-host) | `heintonny/agent-system-admin` | private |
+| Own generic skills/agents/commands | **this repo** (`heintonny/skills`) | public |
+| CLAUDE.md guardrails (shared + per-host) | `heintonny/agent-system-admin` | private |
 | Dotfiles (`settings.json`, statusline, keybindings) | `heintonny/dotsmith` | private |
-| Eksterne skills | `mattpocock/skills` (upstream) | ekstern |
+| External skills | `mattpocock/skills` (upstream) | external |
 
-Host-spesifikt eller sensitivt innhold hører **ikke** hjemme her — det ligger i
-de private repoene.
+Host-specific or sensitive content does **not** belong here — it lives in the
+private repos.
 
-## Legge til en ny egen skill
+## Adding a new own skill
 
-1. Lag mappe under `plugins/skills/skills/<navn>/` med en `SKILL.md`.
-2. Commit + push.
-3. På hver maskin: `claude plugin update skills@heintonny`.
+1. Create a folder under `plugins/skills/skills/<name>/` with a `SKILL.md`.
+2. Bump `version` in `plugin.json` and `marketplace.json`.
+3. Commit + push.
+4. On each machine: `claude plugin update skills@heintonny`.
 
-## Vedlikehold
+## Maintenance
 
 ```bash
-claude plugin list                       # hva er installert
-claude plugin update skills@heintonny    # hent siste versjon
-claude plugin marketplace list           # registrerte marketplaces
+claude plugin list                       # what is installed
+claude plugin update skills@heintonny    # pull the latest version
+claude plugin marketplace list           # registered marketplaces
 ```

@@ -1,7 +1,7 @@
 {
   "name": "skills",
-  "description": "Heins Claude Code skills, agents og commands + kuratert utvalg vendret fra mattpocock/skills (MIT). Portabelt på tvers av Mac, PC og VM.",
-  "version": "0.3.0",
+  "description": "Hein's Claude Code skills, agents and commands + a curated set vendored from mattpocock/skills (MIT). Portable across Mac, PC and VM.",
+  "version": "0.3.1",
   "author": {
     "name": "Hein Tonny Køien"
   },
