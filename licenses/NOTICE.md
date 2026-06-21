@@ -11,13 +11,17 @@ Dette repoet inneholder skills som er avledet fra og delvis kopiert fra:
 Følgende skills under `plugins/skills/skills/` er vendret inn fra `mattpocock/skills`
 (noen kan være lokalt tilpasset/optimalisert for vårt bruk):
 
-`codebase-design`, `decision-mapping`, `diagnosing-bugs`, `domain-modeling`,
-`edit-article`, `git-guardrails-claude-code`, `grill-me`, `grill-with-docs`,
-`grilling`, `handoff`, `implement`, `improve-codebase-architecture`,
-`migrate-to-shoehorn`, `prototype`, `resolving-merge-conflicts`, `review`,
-`scaffold-exercises`, `setup-matt-pocock-skills`, `setup-pre-commit`, `tdd`,
-`to-issues`, `to-prd`, `triage`, `writing-beats`, `writing-fragments`,
-`writing-great-skills`, `writing-shape`.
+`caveman`, `codebase-design`, `decision-mapping`, `diagnosing-bugs`,
+`domain-modeling`, `edit-article`, `git-guardrails-claude-code`, `grill-me`,
+`grill-with-docs`, `grilling`, `handoff`, `implement`,
+`improve-codebase-architecture`, `migrate-to-shoehorn`, `obsidian-vault`,
+`prototype`, `resolving-merge-conflicts`, `review`, `scaffold-exercises`,
+`setup-matt-pocock-skills`, `setup-pre-commit`, `tdd`, `teach`, `to-issues`,
+`to-prd`, `triage`, `write-a-skill`, `writing-beats`, `writing-fragments`,
+`writing-great-skills`, `writing-shape`, `zoom-out`.
+
+Merk: `caveman`, `write-a-skill` og `zoom-out` er fjernet/omdøpt i upstream og
+ble vendret fra en tidligere installert (MIT) versjon.
 
 MIT-lisensen krever at copyright- og tillatelses-noticen følger med ved
 videredistribusjon; den ligger i filen referert over. Egne skills, agents og
