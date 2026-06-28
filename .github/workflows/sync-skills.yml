@@ -1,0 +1,62 @@
+name: Sync vendored skills
+
+# Pulls updates and new skills from the upstream repos declared in
+# sources/sources.json, then opens (or updates) a single PR with the result.
+# Nothing is ever merged automatically — you review and merge.
+#
+# New skills (not previously vendored) get the `needs-security-review` label so
+# the claude-review workflow runs a security review before you approve the merge.
+
+on:
+  schedule:
+    - cron: "0 6 * * 1" # Mondays 06:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: sync-vendored-skills
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Sync skills from upstreams
+        id: sync
+        env:
+          SYNC_REPORT_FILE: ${{ runner.temp }}/sync-report.md
+        run: node scripts/sync-skills.mjs
+
+      - name: Compose PR labels
+        id: labels
+        run: |
+          labels="vendor-sync"
+          if [ "${{ steps.sync.outputs.has_new }}" = "true" ]; then
+            labels="$labels"$'\n'"needs-security-review"
+          fi
+          {
+            echo "list<<EOF"
+            echo "$labels"
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Open or update sync PR
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: automated/skill-sync
+          base: main
+          title: "chore(vendor): sync skills from upstream repos"
+          body-path: ${{ runner.temp }}/sync-report.md
+          labels: ${{ steps.labels.outputs.list }}
+          commit-message: "chore(vendor): sync skills from upstream repos"
+          delete-branch: true
+          sign-commits: true

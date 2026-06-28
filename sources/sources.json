@@ -1,0 +1,29 @@
+{
+  "destination": "plugins/skills/skills",
+  "licensesDir": "licenses",
+  "sources": [
+    {
+      "id": "mattpocock",
+      "name": "mattpocock/skills",
+      "repo": "https://github.com/mattpocock/skills",
+      "ref": "main",
+      "homepage": "https://github.com/mattpocock/skills",
+      "license": { "spdx": "MIT", "holder": "Matt Pocock", "file": "LICENSE" },
+      "layout": "multi",
+      "skillsRoot": "skills",
+      "exclude": ["deprecated", "engineering/ask-matt"],
+      "orphans": ["caveman", "write-a-skill", "zoom-out"]
+    },
+    {
+      "id": "karpathy-llm-wiki",
+      "name": "Astro-Han/karpathy-llm-wiki",
+      "repo": "https://github.com/Astro-Han/karpathy-llm-wiki",
+      "ref": "main",
+      "homepage": "https://github.com/Astro-Han/karpathy-llm-wiki",
+      "license": { "spdx": "MIT", "holder": "Yuhan Lei", "file": "LICENSE" },
+      "layout": "single",
+      "skillName": "karpathy-llm-wiki",
+      "copyIgnore": [".git", "LICENSE", "README.md"]
+    }
+  ]
+}

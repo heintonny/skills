@@ -42,12 +42,20 @@ The skills directory includes, among others, engineering (`tdd`, `diagnosing-bug
 `decision-mapping`, `handoff`), skill authoring (`writing-great-skills`,
 `write-a-skill`) and assorted tooling.
 
-## License & attribution
+## Insourced skills
 
-Own skills/agents/commands are Hein's own. A curated set of skills is vendored
-from **[mattpocock/skills](https://github.com/mattpocock/skills)** (MIT) and may
-be locally adapted. The MIT attribution lives in [`licenses/`](./licenses/) — see
-[`NOTICE.md`](./licenses/NOTICE.md) for which skills it covers.
+Own skills/agents/commands are Hein's own. Skills are also vendored from public
+upstream repos and kept up to date by a config-driven pipeline — see
+[`sources/`](./sources/). Current upstreams:
+**[mattpocock/skills](https://github.com/mattpocock/skills)** and
+**[Astro-Han/karpathy-llm-wiki](https://github.com/Astro-Han/karpathy-llm-wiki)**
+(both MIT).
+
+Vendored skills are **read-only mirrors** — never edit them in place; they're
+overwritten on every sync. To customize one, fork it under a different name. A
+weekly GitHub Action opens a PR with updates and new skills; nothing merges
+automatically, and brand-new skills get a Claude security review first. Generated
+attribution lives in [`licenses/NOTICE.md`](./licenses/NOTICE.md).
 
 ## How this fits the rest of the setup
 
@@ -58,7 +66,7 @@ The setup is split into three layers by sensitivity:
 | Own generic skills/agents/commands | **this repo** (`heintonny/skills`) | public |
 | CLAUDE.md guardrails (shared + per-host) | `heintonny/agent-system-admin` | private |
 | Dotfiles (`settings.json`, statusline, keybindings) | `heintonny/dotsmith` | private |
-| External skills | `mattpocock/skills` (upstream) | external |
+| Insourced skills | public upstreams (declared in [`sources/`](./sources/)) | external |
 
 Host-specific or sensitive content does **not** belong here — it lives in the
 private repos.

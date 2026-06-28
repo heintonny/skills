@@ -5,7 +5,7 @@
   },
   "metadata": {
     "description": "Hein's personal Claude Code marketplace — own skills, agents and commands. Installs auth-free on Mac, PC and VM.",
-    "version": "0.3.1"
+    "version": "0.4.0"
   },
   "plugins": [
     {
