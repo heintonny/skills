@@ -24,6 +24,17 @@
       "layout": "single",
       "skillName": "karpathy-llm-wiki",
       "copyIgnore": [".git", "LICENSE", "README.md"]
+    },
+    {
+      "id": "eraserlabs",
+      "name": "eraserlabs/eraser-io",
+      "repo": "https://github.com/eraserlabs/eraser-io",
+      "ref": "main",
+      "homepage": "https://github.com/eraserlabs/eraser-io",
+      "license": { "spdx": "MIT", "holder": "Eraser", "file": "LICENSE" },
+      "layout": "multi",
+      "skillsRoot": "skills",
+      "exclude": ["aws-diagrams", "azure-diagrams", "bicep-diagrams", "terraform-diagrams"]
     }
   ]
 }

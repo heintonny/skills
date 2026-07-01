@@ -6,17 +6,17 @@ It lists every skill insourced from a public upstream repository.
 ## mattpocock/skills
 
 - **Source:** https://github.com/mattpocock/skills
-- **Pinned commit:** `5d78bd0903420f97c791f834201e550c765699f8` (ref `main`)
+- **Pinned commit:** `7a83a3a682adf699f24dbc06613de87f4e52a0a0` (ref `main`)
 - **License:** MIT — Copyright (c) Matt Pocock
 - **License text:** [`mattpocock-LICENSE.txt`](./mattpocock-LICENSE.txt)
 
 Vendored skills (overwritten on every sync — do not edit in place):
 
-`codebase-design`, `decision-mapping`, `diagnosing-bugs`, `domain-modeling`, `edit-article`, `git-guardrails-claude-code`, `grill-me`, `grill-with-docs`, `grilling`, `handoff`, `implement`, `improve-codebase-architecture`, `loop-me`, `migrate-to-shoehorn`, `obsidian-vault`, `prototype`, `resolving-merge-conflicts`, `review`, `scaffold-exercises`, `setup-matt-pocock-skills`, `setup-pre-commit`, `tdd`, `teach`, `to-issues`, `to-prd`, `triage`, `writing-beats`, `writing-fragments`, `writing-great-skills`, `writing-shape`.
+`code-review`, `codebase-design`, `diagnosing-bugs`, `domain-modeling`, `edit-article`, `git-guardrails-claude-code`, `grill-me`, `grill-with-docs`, `grilling`, `handoff`, `implement`, `improve-codebase-architecture`, `loop-me`, `migrate-to-shoehorn`, `obsidian-vault`, `prototype`, `resolving-merge-conflicts`, `scaffold-exercises`, `setup-matt-pocock-skills`, `setup-pre-commit`, `tdd`, `teach`, `to-issues`, `to-prd`, `triage`, `wayfinder`, `wizard`, `writing-beats`, `writing-fragments`, `writing-great-skills`, `writing-shape`.
 
 Kept locally but removed/renamed upstream (no longer updated):
 
-`caveman`, `write-a-skill`, `zoom-out`.
+`caveman`, `decision-mapping`, `review`, `write-a-skill`, `zoom-out`.
 
 ## Astro-Han/karpathy-llm-wiki
 
@@ -28,6 +28,17 @@ Kept locally but removed/renamed upstream (no longer updated):
 Vendored skills (overwritten on every sync — do not edit in place):
 
 `karpathy-llm-wiki`.
+
+## eraserlabs/eraser-io
+
+- **Source:** https://github.com/eraserlabs/eraser-io
+- **Pinned commit:** `30d6f3679f597eeae67bacab5ee733c863686177` (ref `main`)
+- **License:** MIT — Copyright (c) Eraser
+- **License text:** [`eraserlabs-LICENSE.txt`](./eraserlabs-LICENSE.txt)
+
+Vendored skills (overwritten on every sync — do not edit in place):
+
+`eraser-diagrams`.
 
 The MIT license requires the copyright and permission notice to accompany
 redistribution; the referenced license files satisfy that. Skills, agents and

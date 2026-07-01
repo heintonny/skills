@@ -4,7 +4,7 @@
       "name": "mattpocock/skills",
       "repo": "https://github.com/mattpocock/skills",
       "ref": "main",
-      "commit": "5d78bd0903420f97c791f834201e550c765699f8",
+      "commit": "7a83a3a682adf699f24dbc06613de87f4e52a0a0",
       "homepage": "https://github.com/mattpocock/skills",
       "license": {
         "spdx": "MIT",
@@ -23,6 +23,18 @@
         "holder": "Yuhan Lei",
         "file": "LICENSE"
       }
+    },
+    "eraserlabs": {
+      "name": "eraserlabs/eraser-io",
+      "repo": "https://github.com/eraserlabs/eraser-io",
+      "ref": "main",
+      "commit": "30d6f3679f597eeae67bacab5ee733c863686177",
+      "homepage": "https://github.com/eraserlabs/eraser-io",
+      "license": {
+        "spdx": "MIT",
+        "holder": "Eraser",
+        "file": "LICENSE"
+      }
     }
   },
   "skills": {
@@ -33,10 +45,17 @@
       "hash": null,
       "orphaned": true
     },
+    "code-review": {
+      "source": "mattpocock",
+      "upstreamPath": "skills/engineering/code-review",
+      "commit": "7a83a3a682adf699f24dbc06613de87f4e52a0a0",
+      "hash": "sha256:5769a13d4b3ccf19711f472ac77a9aab4a21bf04d57d8a35d1d56a321de28b71",
+      "orphaned": false
+    },
     "codebase-design": {
       "source": "mattpocock",
       "upstreamPath": "skills/engineering/codebase-design",
-      "commit": "5d78bd0903420f97c791f834201e550c765699f8",
+      "commit": "7a83a3a682adf699f24dbc06613de87f4e52a0a0",
       "hash": "sha256:0975ee04f1fb03ed6efaee5860da4946871297055f550300d1f0f93714dcd24c",
       "orphaned": false
     },
@@ -45,75 +64,82 @@
       "upstreamPath": "skills/in-progress/decision-mapping",
       "commit": "5d78bd0903420f97c791f834201e550c765699f8",
       "hash": "sha256:282ee9c2f8b314c5a995d28d458b933dc8687b7782bd9c0518682f34e58a5b8f",
-      "orphaned": false
+      "orphaned": true
     },
     "diagnosing-bugs": {
       "source": "mattpocock",
       "upstreamPath": "skills/engineering/diagnosing-bugs",
-      "commit": "5d78bd0903420f97c791f834201e550c765699f8",
+      "commit": "7a83a3a682adf699f24dbc06613de87f4e52a0a0",
       "hash": "sha256:bbd063c624f075dcfec171383ca92a0223acd8aa10692b455408815eeb47e967",
       "orphaned": false
     },
     "domain-modeling": {
       "source": "mattpocock",
       "upstreamPath": "skills/engineering/domain-modeling",
-      "commit": "5d78bd0903420f97c791f834201e550c765699f8",
+      "commit": "7a83a3a682adf699f24dbc06613de87f4e52a0a0",
       "hash": "sha256:77f0ac21c44684c8710a12c3656eadec8ae1d73a055088336a532f675550317c",
       "orphaned": false
     },
     "edit-article": {
       "source": "mattpocock",
       "upstreamPath": "skills/personal/edit-article",
-      "commit": "5d78bd0903420f97c791f834201e550c765699f8",
+      "commit": "7a83a3a682adf699f24dbc06613de87f4e52a0a0",
       "hash": "sha256:a4d05a2ed88b7cd2c18eb9edcc46a8ae5f4bc492ff5ca790bc52eac815dfa3e2",
+      "orphaned": false
+    },
+    "eraser-diagrams": {
+      "source": "eraserlabs",
+      "upstreamPath": "skills/eraser-diagrams",
+      "commit": "30d6f3679f597eeae67bacab5ee733c863686177",
+      "hash": "sha256:14e7cfd8b325acb77c7887e61f11bb0e406b3d4c30e349610d420af3cc775c94",
       "orphaned": false
     },
     "git-guardrails-claude-code": {
       "source": "mattpocock",
       "upstreamPath": "skills/misc/git-guardrails-claude-code",
-      "commit": "5d78bd0903420f97c791f834201e550c765699f8",
+      "commit": "7a83a3a682adf699f24dbc06613de87f4e52a0a0",
       "hash": "sha256:ea8f191e76b282c80ed6cd3135d400a41e90c02a2583a6ff05af017a7737c0bc",
       "orphaned": false
     },
     "grill-me": {
       "source": "mattpocock",
       "upstreamPath": "skills/productivity/grill-me",
-      "commit": "5d78bd0903420f97c791f834201e550c765699f8",
+      "commit": "7a83a3a682adf699f24dbc06613de87f4e52a0a0",
       "hash": "sha256:b395482d739d3e4110b43e50ddf027c771370be4e1b03f30affbe2372aa9fdcf",
       "orphaned": false
     },
     "grill-with-docs": {
       "source": "mattpocock",
       "upstreamPath": "skills/engineering/grill-with-docs",
-      "commit": "5d78bd0903420f97c791f834201e550c765699f8",
+      "commit": "7a83a3a682adf699f24dbc06613de87f4e52a0a0",
       "hash": "sha256:da2afc844ffffba4ae5fb405c052a9ecf66fc786b356bbcaf82bee4e4108c77f",
       "orphaned": false
     },
     "grilling": {
       "source": "mattpocock",
       "upstreamPath": "skills/productivity/grilling",
-      "commit": "5d78bd0903420f97c791f834201e550c765699f8",
+      "commit": "7a83a3a682adf699f24dbc06613de87f4e52a0a0",
       "hash": "sha256:a3426f0c57fcdd8a33fd0bd91c6b70e85d815a6e1b123c0e8c0a358c818542aa",
       "orphaned": false
     },
     "handoff": {
       "source": "mattpocock",
       "upstreamPath": "skills/productivity/handoff",
-      "commit": "5d78bd0903420f97c791f834201e550c765699f8",
+      "commit": "7a83a3a682adf699f24dbc06613de87f4e52a0a0",
       "hash": "sha256:b1a439dbece2122c8f22ee901f5eeef35f2e13841d4412a9317c780185e672c1",
       "orphaned": false
     },
     "implement": {
       "source": "mattpocock",
       "upstreamPath": "skills/engineering/implement",
-      "commit": "5d78bd0903420f97c791f834201e550c765699f8",
-      "hash": "sha256:035639e5911d7564a923f012b851d60eb66b5d28f20611a1b63fff8666933bbd",
+      "commit": "7a83a3a682adf699f24dbc06613de87f4e52a0a0",
+      "hash": "sha256:f9627387f4c93aeaa6bacc9b6a09914300c4450e563fe16ca4d6115b256b013c",
       "orphaned": false
     },
     "improve-codebase-architecture": {
       "source": "mattpocock",
       "upstreamPath": "skills/engineering/improve-codebase-architecture",
-      "commit": "5d78bd0903420f97c791f834201e550c765699f8",
+      "commit": "7a83a3a682adf699f24dbc06613de87f4e52a0a0",
       "hash": "sha256:5611efa466f99457c4e2c26c211d17a15b4f1fcd9f62be73838286d12f7b080e",
       "orphaned": false
     },
@@ -127,35 +153,35 @@
     "loop-me": {
       "source": "mattpocock",
       "upstreamPath": "skills/in-progress/loop-me",
-      "commit": "5d78bd0903420f97c791f834201e550c765699f8",
+      "commit": "7a83a3a682adf699f24dbc06613de87f4e52a0a0",
       "hash": "sha256:6f509f0d13c0fd6a1983a6a97eef24c8f1eb65450c6912f56966105aac81b439",
       "orphaned": false
     },
     "migrate-to-shoehorn": {
       "source": "mattpocock",
       "upstreamPath": "skills/misc/migrate-to-shoehorn",
-      "commit": "5d78bd0903420f97c791f834201e550c765699f8",
+      "commit": "7a83a3a682adf699f24dbc06613de87f4e52a0a0",
       "hash": "sha256:50bfd668fa65e338687263a330fc35b68e85a1c101da8171ef8088b502b0e2fd",
       "orphaned": false
     },
     "obsidian-vault": {
       "source": "mattpocock",
       "upstreamPath": "skills/personal/obsidian-vault",
-      "commit": "5d78bd0903420f97c791f834201e550c765699f8",
+      "commit": "7a83a3a682adf699f24dbc06613de87f4e52a0a0",
       "hash": "sha256:9a9463853d6ff5ad6ca58c08f48fc98d2fee817fb0d025e8e7ce2bc03be33e91",
       "orphaned": false
     },
     "prototype": {
       "source": "mattpocock",
       "upstreamPath": "skills/engineering/prototype",
-      "commit": "5d78bd0903420f97c791f834201e550c765699f8",
-      "hash": "sha256:305674375ccd27bf20d81c3c3da99512d2f8be30c869acc00b91b2adedf963ec",
+      "commit": "7a83a3a682adf699f24dbc06613de87f4e52a0a0",
+      "hash": "sha256:9d9cbd33f975603a39916df22f6eab798c18a02a1cf7529aa3ac926539ead150",
       "orphaned": false
     },
     "resolving-merge-conflicts": {
       "source": "mattpocock",
       "upstreamPath": "skills/engineering/resolving-merge-conflicts",
-      "commit": "5d78bd0903420f97c791f834201e550c765699f8",
+      "commit": "7a83a3a682adf699f24dbc06613de87f4e52a0a0",
       "hash": "sha256:6f6178137688f5963613d11d63adf903a4c41fda8b0a98032e028747c9c59c97",
       "orphaned": false
     },
@@ -164,62 +190,76 @@
       "upstreamPath": "skills/in-progress/review",
       "commit": "5d78bd0903420f97c791f834201e550c765699f8",
       "hash": "sha256:1181fb51c59436b330cee1da545806180c13d14bd1dd679299ffe3347c0cd8d9",
-      "orphaned": false
+      "orphaned": true
     },
     "scaffold-exercises": {
       "source": "mattpocock",
       "upstreamPath": "skills/misc/scaffold-exercises",
-      "commit": "5d78bd0903420f97c791f834201e550c765699f8",
+      "commit": "7a83a3a682adf699f24dbc06613de87f4e52a0a0",
       "hash": "sha256:95d0d91c73af895262e5c34dc57619f7976388b7a0d074299de4f218b83a01a7",
       "orphaned": false
     },
     "setup-matt-pocock-skills": {
       "source": "mattpocock",
       "upstreamPath": "skills/engineering/setup-matt-pocock-skills",
-      "commit": "5d78bd0903420f97c791f834201e550c765699f8",
+      "commit": "7a83a3a682adf699f24dbc06613de87f4e52a0a0",
       "hash": "sha256:742a990d004580780ff268e102319e7004a098aba52e846c982acf69586161bf",
       "orphaned": false
     },
     "setup-pre-commit": {
       "source": "mattpocock",
       "upstreamPath": "skills/misc/setup-pre-commit",
-      "commit": "5d78bd0903420f97c791f834201e550c765699f8",
+      "commit": "7a83a3a682adf699f24dbc06613de87f4e52a0a0",
       "hash": "sha256:95f6657588a09a0d6ff741f24624f8a16841f4d358089c246c689a9184eb108f",
       "orphaned": false
     },
     "tdd": {
       "source": "mattpocock",
       "upstreamPath": "skills/engineering/tdd",
-      "commit": "5d78bd0903420f97c791f834201e550c765699f8",
-      "hash": "sha256:96bd9d6c217ebf08a7aa614966de549ecadb0a036eaa5f2da598df44eed32f0a",
+      "commit": "7a83a3a682adf699f24dbc06613de87f4e52a0a0",
+      "hash": "sha256:bae211e5561ab3a696fcb7b7f64169fd0546acc0e7511ec6d6b34ca9e31000ca",
       "orphaned": false
     },
     "teach": {
       "source": "mattpocock",
       "upstreamPath": "skills/productivity/teach",
-      "commit": "5d78bd0903420f97c791f834201e550c765699f8",
+      "commit": "7a83a3a682adf699f24dbc06613de87f4e52a0a0",
       "hash": "sha256:2068a9fd05b5dc5d8fa9180a653b99d7c1f2d78cc31c4f7bce604fd364f4eabf",
       "orphaned": false
     },
     "to-issues": {
       "source": "mattpocock",
       "upstreamPath": "skills/engineering/to-issues",
-      "commit": "5d78bd0903420f97c791f834201e550c765699f8",
+      "commit": "7a83a3a682adf699f24dbc06613de87f4e52a0a0",
       "hash": "sha256:8ac44c93ff4198a13dce1bc6e97ed5c8a2ab45bfb70af7386174ab89cbec0e9e",
       "orphaned": false
     },
     "to-prd": {
       "source": "mattpocock",
       "upstreamPath": "skills/engineering/to-prd",
-      "commit": "5d78bd0903420f97c791f834201e550c765699f8",
+      "commit": "7a83a3a682adf699f24dbc06613de87f4e52a0a0",
       "hash": "sha256:4e0d2b27ee8c4f87a8b5f50d6aeb64903943311d2eb8051433e1d399a8a5ad37",
       "orphaned": false
     },
     "triage": {
       "source": "mattpocock",
       "upstreamPath": "skills/engineering/triage",
-      "commit": "5d78bd0903420f97c791f834201e550c765699f8",
+      "commit": "7a83a3a682adf699f24dbc06613de87f4e52a0a0",
       "hash": "sha256:d646c77029cd0b8379c13c8307344fabcd2e610e5a19d5615e2d3d0cda5270e9",
+      "orphaned": false
+    },
+    "wayfinder": {
+      "source": "mattpocock",
+      "upstreamPath": "skills/in-progress/wayfinder",
+      "commit": "7a83a3a682adf699f24dbc06613de87f4e52a0a0",
+      "hash": "sha256:a5c313d538235cfd55cd9dffb9b225535cdd4c18b564e19294f98d66061a8956",
+      "orphaned": false
+    },
+    "wizard": {
+      "source": "mattpocock",
+      "upstreamPath": "skills/in-progress/wizard",
+      "commit": "7a83a3a682adf699f24dbc06613de87f4e52a0a0",
+      "hash": "sha256:7bad73c3ddc9c5c2f939bcfb32dc5725f6161b6ad1ed18310d53edeefb42465f",
       "orphaned": false
     },
     "write-a-skill": {
@@ -232,28 +272,28 @@
     "writing-beats": {
       "source": "mattpocock",
       "upstreamPath": "skills/in-progress/writing-beats",
-      "commit": "5d78bd0903420f97c791f834201e550c765699f8",
+      "commit": "7a83a3a682adf699f24dbc06613de87f4e52a0a0",
       "hash": "sha256:13c3afdcc1bd15e3d731807706413bac1927d369fca5b48235b46cbca8b9f5c9",
       "orphaned": false
     },
     "writing-fragments": {
       "source": "mattpocock",
       "upstreamPath": "skills/in-progress/writing-fragments",
-      "commit": "5d78bd0903420f97c791f834201e550c765699f8",
+      "commit": "7a83a3a682adf699f24dbc06613de87f4e52a0a0",
       "hash": "sha256:544b0aa508886443017373e4c03bc06acadad172b95e66b395aa61bb573ea667",
       "orphaned": false
     },
     "writing-great-skills": {
       "source": "mattpocock",
       "upstreamPath": "skills/productivity/writing-great-skills",
-      "commit": "5d78bd0903420f97c791f834201e550c765699f8",
+      "commit": "7a83a3a682adf699f24dbc06613de87f4e52a0a0",
       "hash": "sha256:d7ff11e9fce9eefc4e1b57106563b8bf0112b114bb1fa1cb542cc519dddf3b96",
       "orphaned": false
     },
     "writing-shape": {
       "source": "mattpocock",
       "upstreamPath": "skills/in-progress/writing-shape",
-      "commit": "5d78bd0903420f97c791f834201e550c765699f8",
+      "commit": "7a83a3a682adf699f24dbc06613de87f4e52a0a0",
       "hash": "sha256:1e7cfb84a507c6a2a141dc1e823477ea964cafa3622a6d4050c414b065beaad3",
       "orphaned": false
     },

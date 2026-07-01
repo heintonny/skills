@@ -47,9 +47,10 @@ The skills directory includes, among others, engineering (`tdd`, `diagnosing-bug
 Own skills/agents/commands are Hein's own. Skills are also vendored from public
 upstream repos and kept up to date by a config-driven pipeline — see
 [`sources/`](./sources/). Current upstreams:
-**[mattpocock/skills](https://github.com/mattpocock/skills)** and
-**[Astro-Han/karpathy-llm-wiki](https://github.com/Astro-Han/karpathy-llm-wiki)**
-(both MIT).
+**[mattpocock/skills](https://github.com/mattpocock/skills)**,
+**[Astro-Han/karpathy-llm-wiki](https://github.com/Astro-Han/karpathy-llm-wiki)** and
+**[eraserlabs/eraser-io](https://github.com/eraserlabs/eraser-io)** (`eraser-diagrams` —
+diagram generation via the Eraser API; all MIT).
 
 Vendored skills are **read-only mirrors** — never edit them in place; they're
 overwritten on every sync. To customize one, fork it under a different name. A
